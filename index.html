@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Segregación Socioespacial en Bogotá D.C.</title>
+  <meta name="description" content="Resumen web de la presentación: Segregación socioespacial en el suelo urbano residencial en Bogotá D.C." />
+  <style>
+    :root {
+      --bg:#0f172a;
+      --panel:#111827;
+      --muted:#94a3b8;
+      --ink:#e5e7eb;
+      --accent:#eab308;
+      --ring:#334155;
+      --card:#0b1222;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial;
+      color: var(--ink);
+      background: radial-gradient(1200px 800px at 10% 0%, #0b1222 0, #0f172a 45%, #0a0f1e 100%);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    nav.top {
+      position: sticky;
+      top: 0;
+      background: rgba(11,18,34,.7);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1f2937;
+      z-index: 20;
+    }
+    nav.top .wrap {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .navlinks {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .navlinks a {
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--ink);
+      border: 1px solid transparent;
+    }
+    .navlinks a:hover {
+      border-color: var(--ring);
+    }
+
+    header.hero {
+      position: relative;
+      padding: 96px 0 80px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(14,23,42,0.2), rgba(14,23,42,0.6)),
+                  radial-gradient(1200px 800px at 80% 20%, rgba(234,179,8,0.08), transparent 60%);
+      border-bottom: 1px solid #1f2937;
+    }
+    .title {
+      font-size: clamp(28px, 4vw, 52px);
+      margin: .5rem 0 1rem;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      padding: 64px 0;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .fig {
+      border: 1px dashed var(--ring);
+      border-radius: 14px;
+      padding: 18px;
+      color: #cbd5e1;
+    }
+
+    h2 {
+      font-size: clamp(22px, 3.2vw, 34px);
+      margin: 0 0 18px;
+    }
+
+    .muted { color: var(--muted); }
+
+    input, textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--ring);
+      background: var(--card);
+      color: var(--ink);
+    }
+
+    button.cta {
+      margin-top: 14px;
+      background: linear-gradient(90deg, #eab308, #e8c23a);
+      color: #111827;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 48px 0;
+      text-align: center;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top">
+    <div class="wrap">
+      <div style="font-weight:800">Índice</div>
+      <div class="navlinks">
+        <a href="#objetivoGral">Objetivo General</a>
+        <a href="#objetivoEsp1">Medición y Mapeo</a>
+        <a href="#objetivoEsp2">Modelado</a>
+        <a href="#objetivoEsp3">Modelo Urbano No Planificado</a>
+        <a href="#objetivoEsp4">Escenario de Reducción</a>
+        <a href="#respuesta">Respuesta</a>
+        <a href="#aportes">Aportes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="title">La segregación socioespacial en el suelo urbano residencial en Bogotá D.C.</h1>
+      <div class="meta">
+        <span>Autor: Miguel Ángel Sierra</span>
+      </div>
+      <br/>
+      <div class="fig">
+        <img src="images/Diapositiva2.JPG" alt="Diapositiva2" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Secciones con imágenes -->
+    <!-- Aquí puedes mantener solo las que necesites -->
+    <section id="objetivoGral" class="wrap fig"><img src="images/Diapositiva3.JPG" alt="Objetivo General" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    
+    <section id="objetivoEsp1" class="wrap fig"><img src="images/Diapositiva4.JPG" alt="Medición y Mapeo" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.1" class="wrap fig"><img src="images/Diapositiva5.JPG"  style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.2" class="wrap fig"><img src="images/Diapositiva6.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.3" class="wrap fig"><img src="images/Diapositiva7.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.4" class="wrap fig"><img src="images/Diapositiva8.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.5" class="wrap fig"><img src="images/Diapositiva9.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.6" class="wrap fig"><img src="images/Diapositiva10.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp1.7" class="wrap fig"><img src="images/Diapositiva11.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <section id="objetivoEsp2" class="wrap fig"><img src="images/Diapositiva12.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.1" class="wrap fig"><img src="images/Diapositiva13.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.2" class="wrap fig"><img src="images/Diapositiva14.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.3" class="wrap fig"><img src="images/Diapositiva15.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.4" class="wrap fig"><img src="images/Diapositiva16.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.5" class="wrap fig"><img src="images/Diapositiva17.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.6" class="wrap fig"><img src="images/Diapositiva18.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp2.7" class="wrap fig"><img src="images/Diapositiva19.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <section id="objetivoEsp3" class="wrap fig"><img src="images/Diapositiva20.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp3.1" class="wrap fig"><img src="images/Diapositiva21.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <section id="objetivoEsp4" class="wrap fig"><img src="images/Diapositiva22.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="objetivoEsp4.1" class="wrap fig"><img src="images/Diapositiva23.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <section id="respuesta" class="wrap fig"><img src="images/Diapositiva24.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <section id="aportes1" class="wrap fig"><img src="images/Diapositiva25.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+    <section id="aportes1.1" class="wrap fig"><img src="images/Diapositiva26.JPG" style="display: block; margin: 10px auto 0; max-width: 100%; border-radius: 10px;"></section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <p class="muted">¿Comentarios o colaboración? Escríbenos y comparte tus datos de contacto.</p>
+        <form onsubmit="event.preventDefault(); alert('¡Gracias! Responderemos pronto.');" class="fig">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label for="nombre">Nombre</label><br/>
+              <input id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="correo">Correo</label><br/>
+              <input id="correo" name="correo" required type="email" placeholder="tunombre@correo.com.co" />
+            </div>
+          </div>
+          <div style="margin-top:10px">
+            <label for="mensaje">Mensaje</label><br/>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu interés"></textarea>
+          </div>
+          <button class="cta" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2025 – Investigación urbana. Bogotá D.C.</p>
+      <p class="muted">Este sitio resume una presentación académica.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
